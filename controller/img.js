@@ -1,6 +1,6 @@
 const img = require("../model/img_model");
 
-const {createimgSchema, updateimgSchema}=require("../controller/validated/validate_img")
+const {createimgSchema, updateimgSchema}=require("../validated/validate_img")
 
 const Create_img = async (req, res) => {
         const { error, value } = createimgSchema.validate(req.body,{

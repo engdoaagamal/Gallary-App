@@ -1,6 +1,6 @@
 const img=require("../controller/img")
 const routers=require("express").Router();
-const  uploadImage=require("../model/middleware/img_middleware")
+const  uploadImage=require("../middleware/img_middleware")
 routers.post ("/addimg",uploadImage,img.Create_img);
 routers.get ("/getall",img.gat_All_img);
 routers.get("/getoneimg/:id", img.gat_one_img);
